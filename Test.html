@@ -1,13 +1,38 @@
- 
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-</head>
-<body>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Icreament.com</title>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+	<script type="text/javascript">
+		
+		function addValue(incrementByVal) {
+
+			var val = +document.getElementById('value').textContent;
+			document.getElementById('value').textContent = val + incrementByVal;
+
+		}
+	</script>
+</head>
+<body style="text-align: center;">
+	<h1>increment in the value</h1>
+	<h2>value :</h2>
+	<h2 id="value" name="value"> 1 </h2>
+
+	<ul style="position: absolute; left: 40%;">
+
+		<!-- <li><button onclick="document.getElementById('value').innerHTML='2' "> 1 increment</button></li>
+		<li><button onclick="document.getElementById('value').innerHTML='3' ">2 increment</button></li>
+		<li><button onclick="document.getElementById('value').innerHTML='4' ">3 increment</button></li>
+		<li><button onclick="document.getElementById('value').innerHTML='5' ">4 increment</button></li> -->
+
+		<li><button onclick="addValue(1)"> 1 increment</button></li>
+		<li><button onclick="addValue(2)">2 increment</button></li>
+		<li><button onclick="addValue(3) ">3 increment</button></li>
+		<li><button onclick="addValue(4)">4 increment</button></li>
+
+	</ul>
 
 </body>
 </html>
